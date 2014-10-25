@@ -20,7 +20,7 @@ RUN sed -i 's/;extension=pdo_pgsql.so/extension=pdo_pgsql.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=pdo_mysql.so/extension=pdo_mysql.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=pdo_sqlite.so/extension=pdo_sqlite.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=exif.so/extension=exif.so/g' /etc/php/php.ini
-RUN sed -i 's/;date.timezone =/date.timezone = UTF/g' /etc/php/php.ini
+RUN sed -i 's/;date.timezone =/date.timezone = UTC/g' /etc/php/php.ini
 
 RUN sed -i 's/;extension=xcache.so/extension=xcache.so/g' /etc/php/conf.d/xcache.ini
 
